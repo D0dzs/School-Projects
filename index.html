@@ -11,35 +11,44 @@
     <link rel="shortcut icon" href="./imgs/fav-icon.jpeg" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
-    <title>Dodzs | Weblap választó</title>
+    <title>Dodzs | Kezdőlap</title>
   </head>
   <body>
     <header>
-      <nav>
-        <h1>Dodzs | School Projects</h1>
-        <ul>
-          <li>Kezdőlap</li>
-          <li>Oldalak</li>
-          <li>Miért</li>
-        </ul>
-      </nav>
+      <div class="nav" data-float="false">
+        <div class="nav-panel">
+          <h2 id="panel1-title">
+            <p>🧐 School Projects</p>
+            <button class="nav-trigger" aria-expanded="false" aria-controls="nav1-content">
+              🧐 School Projects
+            </button>
+          </h2>
+          <div class="nav-content" role="region" aria-labelledby="panel1-title" aria-hidden="true" id="panel1-content">
+            <div>
+              <a href="/#why">Oldal funcionalitása</a>
+              <a href="/#websites">Weboldalak</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
-      <section id="hero-screen">
-        <h1>Section 1</h1>
+      <div id="layer" />
+      <section id="why">
+        <div id="why-inner">
+          <h1>Miért is jött létre az oldal? 🤔</h1>
+          <p>Ez az oldal tartalmazza az iskolában lévő feladatok megoldását. Igazából egy weboldalakat egybegyűjtő oldal, hogy könnyebben meg lehessen nézni a feladat végleges megoldását.</p>
+        </div>
       </section>
       <section id="websites">
         <h1>Oldalak</h1>
-        <a href="./projects/paralimpia/index.html" target="_blank">Paralimpia</a>
-      </section>
-      <section id="why">
-        <h1>Miért</h1>
+        <a href="./projects/paralimpia/index.html" target="_blank"
+          >Paralimpia</a
+        >
       </section>
     </main>
     <footer>
-        <p>
-            All rights reserved &copy; | Dodzs - School Projects - 2023
-        </p>
+      <p>All rights reserved &copy; 2023 | <b>Dodzs</b>, School Projects</p>
     </footer>
   </body>
 </html>
