@@ -188,6 +188,12 @@ section {
   transition: all 500ms;
 }
 
+.ccdate {
+  color: #6c757d;
+  font-weight: 400;
+  font-size: .8rem;
+}
+
 @media screen and (min-width: 900px) {
   #why-inner {
     padding: 4rem 2rem;

@@ -4,7 +4,8 @@ const SITES = [
     PATH: "./projects/paralimpia/index.html",
     TITLE: "Paralimpia",
     DESCRIPTION: "Ez egy vizsgafeladat megoldását tartalmazó oldal, amit meg lehet tekinteni Github-on.",
-    PREVIEW: "./imgs/previews/Paralimpia.png"
+    PREVIEW: "./imgs/previews/Paralimpia.png",
+    DATE: "2023.05.21 - 19:38"
   }
 ]
 
@@ -45,6 +46,11 @@ function toggleAccordion(panelToActivate) {
   }
 }
 
+
+
+
+
+
 // ( ﾉ ﾟｰﾟ)ﾉ
 // Köszönet Petyának aki megvalosította azt, hogy hogyan generáljuk le a kártyákat ❤️
 // Link a github-hoz: https://github.com/PetiDev/schoolProjects/
@@ -66,8 +72,11 @@ SITES.forEach((site) => {
   cardBody.classList.add("card-body");
 
   const cardTitle = document.createElement("h5");
+  const cardDate = document.createElement("small");
   cardTitle.classList.add("card-title");
-  cardTitle.innerText = site.TITLE;
+  cardDate.classList.add("ccdate");
+  cardDate.innerText = `(${site.DATE})`;
+  cardTitle.innerText = `${site.TITLE} `;
 
   const cardButton = document.createElement("a");
   cardButton.classList.add("btn", "btn-info", 'cbtn');
@@ -78,9 +87,11 @@ SITES.forEach((site) => {
   cardDescription.innerText = site.DESCRIPTION;
   cardDescription.classList.add("card-text");
 
+  // Do the shitty stuffs
   card.appendChild(cardHeader);
   cardHeader.appendChild(frame);
   card.appendChild(cardBody);
+  cardTitle.appendChild(cardDate);
   cardBody.appendChild(cardTitle);
   cardBody.appendChild(cardDescription);
   cardBody.appendChild(cardButton);
