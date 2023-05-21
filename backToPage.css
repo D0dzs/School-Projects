@@ -1,0 +1,31 @@
+#backtomain {
+  position: absolute;
+  top: 50;
+  right: 0;
+  padding: 10px;
+  background-color: #ffc180;
+  border-bottom-right-radius: 10px;
+  z-index: 999;
+  text-decoration: none;
+  transform: translateX(60px);
+  transition: transform 0.5s ease-in-out;
+  border-radius: 0px 0px 0px 10px;
+}
+
+#backtomain:hover {
+  transform: translateX(0);
+}
+
+#backtomain a {
+  color: #000;
+  font-weight: bolder;
+}
+
+#backtomain a::before {
+  content: "🏠 ";
+  margin-right: 10px;
+}
+
+#backtomain a:hover {
+  text-decoration: none;
+}
