@@ -3,16 +3,15 @@
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-  scroll-padding-top: 1rem !important;
+  scroll-padding-top: 3rem !important;
   user-select: none !important;
+
+  /* -- DEBUG -- */
+  /* outline: 1px solid red; */
 }
 
 html,
 body {
-  height: 100%;
-  width: 100%;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
   background-image: url('./imgs/bg-image.jpg');
   background-repeat: no-repeat no-repeat;
   background-size: cover;
@@ -20,34 +19,38 @@ body {
   background-position: center center;
 }
 
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+p {
+  margin: 0 !important;
+}
+
+header {
+  box-shadow: 0px 0px 10px 2px black;
+}
+
 section {
-  color: whitesmoke;
   height: 50vh;
 }
 
-footer {
+#cfooter {
   background: rgba(0, 0, 0, 0.85);
   backdrop-filter: blur(4px);
   color: #effeef;
   padding: 1rem;
   text-align: center;
   font-size: smaller;
-  bottom: 0;
-  width: 100%;
-}
-
-a {
-  text-decoration: none;
-  color: currentColor;
 }
 
 #panel1-title > p {
   display: none;
 }
 
-#layer {
-  background-color: rgba(0, 0, 0, 0.44);
-  position: inherit;
+#panel1-title {
+  margin-bottom: 0px !important;
 }
 
 #why {
@@ -75,6 +78,32 @@ a {
   color: #ddd;
 }
 
+#wb-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+#websites > h1 {
+  height: auto;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#website > hr {
+  background-color: red;
+}
+
+#wb-title,
+#why-inner > h1 {
+  font-size: xx-large;
+  color: whitesmoke;
+}
+
 .nav-content {
   display: grid;
   grid-template-rows: 0fr;
@@ -85,11 +114,20 @@ a {
   grid-template-rows: 1fr;
 }
 
+.ccard {
+  backdrop-filter: blur(4px) !important;
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  width: 18rem !important;
+  box-shadow: 0px 0px 10px 2px black !important;
+  color: white !important;
+  margin: 0 auto !important;
+}
+
 .nav-content > div {
   overflow: hidden;
 }
 
-.nav {
+.cnav {
   background: rgba(0, 0, 0, 0.85);
   backdrop-filter: blur(2px);
   color: #effeef;
@@ -99,7 +137,7 @@ a {
   padding: 1rem;
 }
 
-.nav h2 {
+.cnav h2 {
   position: relative;
 }
 
@@ -108,28 +146,23 @@ a {
   border: 0;
   font: inherit;
   color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 100%;
 }
 
-.nav-trigger::before,
-.nav-trigger::after {
-  position: absolute;
-  right: 1em;
-  content: "";
-  display: block;
-  width: 1em;
-  height: 5px;
-  background: currentcolor;
-  translate: 0 0.55em;
+.nav-trigger > img {
+  width: 2rem;
+  margin-right: 1rem;
   transition: transform 500ms;
 }
 
-.nav-trigger::after {
-  rotate: 90deg;
-  translate: 0 -0.78em;
+.cbtn {
+  margin-top: 10px !important;
 }
 
-.nav-trigger[aria-expanded="true"]::before,
-.nav-trigger[aria-expanded="true"]::after {
+.nav-trigger[aria-expanded="true"] img {
   transform: rotate(45deg);
 }
 
@@ -156,10 +189,6 @@ a {
 }
 
 @media screen and (min-width: 900px) {
-  section {
-    height: 75vh;
-  }
-
   #why-inner {
     padding: 4rem 2rem;
     box-shadow: 0px 0px 10px 10px black;
@@ -168,6 +197,11 @@ a {
 
   #panel1-title > p {
     display: block;
+    margin-bottom: 0rem;
+  }
+
+  .card {
+    margin: 0 !important;
   }
 
   .nav-panel {
@@ -197,5 +231,11 @@ a {
 
   .nav-trigger {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #wb-container {
+    width: 1200px;
   }
 }
