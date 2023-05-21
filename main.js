@@ -3,7 +3,8 @@ const SITES = [
   {
     PATH: "./projects/paralimpia/index.html",
     TITLE: "Paralimpia",
-    DESCRIPTION: "Ez egy vizsgafeladat megoldását tartalmazó oldal, amit meg lehet tekinteni Github-on."
+    DESCRIPTION: "Ez egy vizsgafeladat megoldását tartalmazó oldal, amit meg lehet tekinteni Github-on.",
+    PREVIEW: "./imgs/previews/Paralimpia.png"
   }
 ]
 
@@ -57,10 +58,9 @@ SITES.forEach((site) => {
   cardHeader.classList.add("bg-image","hover-overlay", "ripple");
   cardHeader.setAttribute("data-mdb-ripple-color", "dark");
 
-  const frame = document.createElement("iframe");
+  const frame = document.createElement("img");
   frame.classList.add("img-fluid");
-  frame.src = site.PATH;
-  frame.scrolling = "no";
+  frame.src = site.PREVIEW ?? "./imgs/previews/default.jpg";
 
   const cardBody = document.createElement("div");
   cardBody.classList.add("card-body");

@@ -1,0 +1,77 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+  color: darkgreen;
+}
+
+p {
+  text-indent: 20px;
+    text-align: justify;
+}
+
+h1,
+h2,
+h3 {
+  color: rgba(255, 0, 0, 0.75);
+  font-variant: small-caps;
+  border-bottom: 1px solid darkgreen;
+}
+
+a.nav-link {
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(255, 0, 0, 0.75);
+  border-radius: 15px;
+}
+a.nav-link:hover {
+  background-color: white;
+  border-radius: 15px;
+  color: darkgreen;
+}
+
+.kispiktogram {
+  cursor: pointer;
+}
+
+.col-md-1 img.kispiktogram {
+  width: 94%;
+  float: left;
+  max-width: 172px;
+  filter: hue-rotate(280deg);
+}
+.col-md-3 img.kispiktogram {
+  width: 24%;
+  float: left;
+  max-width: 172px;
+  filter: hue-rotate(250deg) brightness(200%);
+}
+
+fieldset {
+  margin: 25px 20px 5px;
+  border: 1px solid darkgreen;
+  background-color: #f6f6f6;
+  padding: 10px 15px 0px;
+}
+
+legend {
+  background-color: darkgray;
+  color: white;
+  margin: auto;
+  padding: 5px 15px;
+  width: 75%;
+}
+
+#evszak {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#piktorgram {
+  float: right;
+  margin-left: 20px;
+  background-color: white;
+}
