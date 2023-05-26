@@ -10,7 +10,7 @@ const SITES = [
   {
     PATH: "./projects/evmadara/index.html",
     TITLE: "Év madara program",
-    DESCRIPTION: "Tekints meg a maradak világát, igaz hogy érgi de na... Ne szólj bele D:",
+    DESCRIPTION: "Tekintsd meg a maradak világát, igaz hogy régi de na... Ne szólj bele D:",
     PREVIEW: "./imgs/previews/Év_madara_program.png",
     DATE: "2023.05.26 - 11:50"
   },
