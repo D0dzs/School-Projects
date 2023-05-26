@@ -6,7 +6,14 @@ const SITES = [
     DESCRIPTION: "Ez egy vizsgafeladat megoldását tartalmazó oldal, amit meg lehet tekinteni Github-on.",
     PREVIEW: "./imgs/previews/Paralimpia.png",
     DATE: "2023.05.21 - 19:38"
-  }
+  },
+  {
+    PATH: "./projects/evmadara/index.html",
+    TITLE: "Év madara program",
+    DESCRIPTION: "Tekints meg a maradak világát, igaz hogy érgi de na... Ne szólj bele D:",
+    PREVIEW: "./imgs/previews/Év_madara_program.png",
+    DATE: "2023.05.26 - 11:50"
+  },
 ]
 
 
